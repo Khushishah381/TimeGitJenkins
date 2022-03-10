@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TimeTest" project="Time" tests="14" started="14" failures="1" errors="0" ignored="0">
+  <testsuite name="Time.TimeTest" time="0.184" displayname="TimeTest" uniqueid="[engine:junit-jupiter]/[class:Time.TimeTest]">
+    <testcase name="testGetTotalSecondsBad" classname="Time.TimeTest" time="0.039" displayname="testGetTotalSecondsBad()" uniqueid="[engine:junit-jupiter]/[class:Time.TimeTest]/[method:testGetTotalSecondsBad()]"/>
+    <testcase name="testGetTotalHoursGood" classname="Time.TimeTest" time="0.001" displayname="testGetTotalHoursGood()" uniqueid="[engine:junit-jupiter]/[class:Time.TimeTest]/[method:testGetTotalHoursGood()]"/>
+    <testcase name="testGetTotalMinutesBad" classname="Time.TimeTest" time="0.003" displayname="testGetTotalMinutesBad()" uniqueid="[engine:junit-jupiter]/[class:Time.TimeTest]/[method:testGetTotalMinutesBad()]"/>
+    <testcase name="testGetTotalSecondsGood" classname="Time.TimeTest" time="0.002" displayname="testGetTotalSecondsGood()" uniqueid="[engine:junit-jupiter]/[class:Time.TimeTest]/[method:testGetTotalSecondsGood()]"/>
+    <testcase name="testGetTotalSecondsBoundary" classname="Time.TimeTest" time="0.001" displayname="testGetTotalSecondsBoundary()" uniqueid="[engine:junit-jupiter]/[class:Time.TimeTest]/[method:testGetTotalSecondsBoundary()]"/>
+    <testcase name="testGetSecondsBoundary" classname="Time.TimeTest" time="0.002" displayname="testGetSecondsBoundary()" uniqueid="[engine:junit-jupiter]/[class:Time.TimeTest]/[method:testGetSecondsBoundary()]"/>
+    <testcase name="testGetTotalHoursBoundary" classname="Time.TimeTest" time="0.001" displayname="testGetTotalHoursBoundary()" uniqueid="[engine:junit-jupiter]/[class:Time.TimeTest]/[method:testGetTotalHoursBoundary()]"/>
+    <testsuite name="testGetTotalHours(Time.TimeTest)" time="0.036" displayname="testGetTotalHours(String)" parameters="java.lang.String" uniqueid="[engine:junit-jupiter]/[class:Time.TimeTest]/[test-template:testGetTotalHours(java.lang.String)]">
+      <testcase name="testGetTotalHours" classname="Time.TimeTest" time="0.036" dynamicTest="true" displayname="[1] 05:00:00" parameters="java.lang.String" uniqueid="[engine:junit-jupiter]/[class:Time.TimeTest]/[test-template:testGetTotalHours(java.lang.String)]/[test-template-invocation:#1]"/>
+      <testcase name="testGetTotalHours" classname="Time.TimeTest" time="0.002" dynamicTest="true" displayname="[2] 05:15:15" parameters="java.lang.String" uniqueid="[engine:junit-jupiter]/[class:Time.TimeTest]/[test-template:testGetTotalHours(java.lang.String)]/[test-template-invocation:#2]"/>
+      <testcase name="testGetTotalHours" classname="Time.TimeTest" time="0.004" dynamicTest="true" displayname="[3] 05:59:59" parameters="java.lang.String" uniqueid="[engine:junit-jupiter]/[class:Time.TimeTest]/[test-template:testGetTotalHours(java.lang.String)]/[test-template-invocation:#3]"/>
+    </testsuite>
+    <testcase name="testGetTotalMinutesGood" classname="Time.TimeTest" time="0.003" displayname="testGetTotalMinutesGood()" uniqueid="[engine:junit-jupiter]/[class:Time.TimeTest]/[method:testGetTotalMinutesGood()]"/>
+    <testcase name="testGetTotalMinutesBoundary" classname="Time.TimeTest" time="0.004" displayname="testGetTotalMinutesBoundary()" uniqueid="[engine:junit-jupiter]/[class:Time.TimeTest]/[method:testGetTotalMinutesBoundary()]"/>
+    <testcase name="testGetMilliseconds" classname="Time.TimeTest" time="0.011" displayname="testGetMilliseconds()" uniqueid="[engine:junit-jupiter]/[class:Time.TimeTest]/[method:testGetMilliseconds()]">
+      <failure>java.lang.AssertionError: The milliseconds were not calculated properly&#13;
+	at org.junit.Assert.fail(Assert.java:89)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:42)&#13;
+	at Time.TimeTest.testGetMilliseconds(TimeTest.java:95)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#13;
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)&#13;
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)&#13;
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)&#13;
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)&#13;
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)&#13;
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)&#13;
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)&#13;
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)&#13;
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)&#13;
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)&#13;
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)&#13;
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)&#13;
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)&#13;
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)&#13;
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)&#13;
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)&#13;
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)&#13;
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)&#13;
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)&#13;
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)&#13;
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)&#13;
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)&#13;
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)&#13;
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:95)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:91)&#13;
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:60)&#13;
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:98)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testGetTotalHoursBad" classname="Time.TimeTest" time="0.002" displayname="testGetTotalHoursBad()" uniqueid="[engine:junit-jupiter]/[class:Time.TimeTest]/[method:testGetTotalHoursBad()]"/>
+  </testsuite>
+</testrun>
